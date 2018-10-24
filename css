@@ -1,0 +1,42 @@
+body {
+     margin:0;
+     padding:0;
+     height:100%;
+     }
+    #header{
+       height:15%;
+       width:100%;
+       background-color:#009900;
+       margin:auto;
+       text-align:center;
+     }
+     #container{
+       height:60;
+       width:100%;
+       background-color:#990000;
+       margin:auto;
+       text-align:center;
+       color:#FFFFFF;
+     }
+     #sidebar{
+       height:25%;
+       width:30%;
+       background-color:#000000;
+       margin:auto;
+       text-align:center;
+       float: left;
+       color:#FFFFFF;
+     }
+     #footer{
+       height:10%;
+       width:100%;
+       background-color:#990000;
+       margin:auto;
+       text-align:center;
+       color:#FFFFFF;
+     }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

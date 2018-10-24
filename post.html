@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>..DJANGO GIRLS..</title>
+	
+   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+   <link rel="stylesheet" type="text/css" href="style.css">
+
+   <script>
+function validateForm() {
+    var x = document.forms["post"]["author"]["title"]["image"]["content"]["category"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+	
+     <div id="header">
+     	<img src="djangogirls.png" alt="DJANGO GIRLS" height="420" width="1600">
+     	<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="post.html">Post</a></li>
+			<li class="dropdown">
+		    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+		    <div class="dropdown-content">
+		      <a href="#">Django Girls</a>
+		      <a href="#">Oluaka DP</a>
+		      <a href="#">Google DP</a>
+		      <a href="#">Forloop</a>
+		    </div>
+		  </li>
+		</ul>
+     </div>
+     <div id="container">
+     
+<form name="post" action="me.html" onsubmit="return validateForm()" method="post">
+  <div class="container">
+    <h1>POST</h1>
+    <p>Please fill in this form to post a comment.</p>
+    <hr>
+
+    <label for="author" style="color:DodgerBlue;"><b>Author</b></label><br>
+    <input type="text" placeholder="Enter Author" name="author"  style="width: 50%; text-align: cleft;" required>
+<br><br>
+    <label for="title" style="color:DodgerBlue;"><b>Title</b></label><br>
+    <input type="text" placeholder="Enter Title" name="title"  style="width: 50%; text-align: left;" required>
+<br><br>
+    <label for="image" style="color:DodgerBlue;"><b>Upload Image</b></label><br>
+    <input type="file" name="image" id="image" required>
+<br><br>
+    <label for="content" style="color:DodgerBlue;"><b>Content</b></label><br>
+    <textarea col="300" row="100" class="textarea" name="content" style="width: 50%; text-align: left;" required></textarea>
+<br><br>
+    <label for="category" style="color:DodgerBlue;"><b>Select Category</b></label><br>
+    <select name="category" style="width: 50%; text-align: left;" required>
+    	<option value="djangogirls">Django Girls</option>
+		<option value="Oluaka">Oluaka DP</option>
+		<option value="Google">Google DP</option>
+		<option value="forloop">Forloop</option>
+    </select>><br>
+    <hr>
+ 
+    <button type="submit" class="registerbtn">POST</button>
+  </div>
+
+  
+</form> 
+
+</div>
+     <div id="sidebar" style="margin-top: -570px" >
+     	<img src="oluaka.jpg" alt="DJANGO GIRLS" height="250" width="480"><br>
+     	<img src="oluaka.jpg" alt="DJANGO GIRLS" height="250" width="480">
+
+
+     </div>
+    <footer>
+     	<div id="footer">
+            Copyright &copy; by <a href="http://www.linkedin.com/in/amadikwajoyn">AMADIKWAJOYN@</a>. All Right Reserved>.
+        </div>
+    </footer>
+   </body>
+ </html>
+
+
+
+
+
+
+
+
+ 
